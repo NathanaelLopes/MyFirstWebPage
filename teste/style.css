@@ -1,0 +1,35 @@
+body{
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    border: 5px solid #000000;
+    padding: 10px;
+    max-width: 400px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0,black );
+    margin: 10px auto;
+    background-color: #f9f9f9;
+}
+  .profile-pic {
+    width: 100px; 
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+.info h2 {
+    margin: 0 0 5px;
+}
+
+.info p {
+    margin: 0;
+    color: color #3f3f3f;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+  }
+  
