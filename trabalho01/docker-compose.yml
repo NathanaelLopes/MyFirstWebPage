@@ -1,0 +1,10 @@
+services:
+  web:
+    image: nginx:1.27.5
+    volumes:
+    - ./:/usr/share/nginx/html
+    ports:
+    - "8882:80"
+    environment:
+    - NGINX_HOST=foobar.com
+    - NGINX_PORT=80
