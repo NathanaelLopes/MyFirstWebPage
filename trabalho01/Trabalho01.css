@@ -2,16 +2,26 @@ body {
     background-color: #ffffff;
     font-family: Arial, sans-serif;
     margin: 30px;
-    padding: 0px;
+    padding: 15px;
+    min-width: 800px;
 }
 
 .header, .footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #d9d9d966;
+    background-color: #dddddd67;
     color: rgb(0, 0, 0);
     height: 100px;
+    border: #a3a2a2 solid 1px;
+}
+
+.header {
+    border-radius: 10px 10px 0px 0px;
+}
+
+.footer {
+    border-radius: 0px 0px 10px 10px;
 }
 
 header h1, footer h1 {
@@ -23,13 +33,15 @@ header h1, footer h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #3b3a3a;
-    color: rgb(255, 255, 255);
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
     height: 50px;
+    border:#a3a2a2 1px;
+    border: #a3a2a2 solid 1px;
 }
 
 .nav div {
-    width: 25%;
+    width: 20%;
     text-align: center;
     padding: 10px;
     font-size: 1.5em;
@@ -38,11 +50,11 @@ header h1, footer h1 {
 
 main {
     display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: #ffffff;
-    height: 400px;
-    padding: 10px;
+    height: 250px;
+    padding: 25px;
+    border: #a3a2a2 solid 1px;
+
 }
 
 .foto-space {
@@ -53,13 +65,14 @@ main {
     width: 70%;
     height: 100%;
     font-size: 1.5em;
+    min-width: 400px;
+    max-width: 400px;
+    border-radius: 10px;
+    border: #a3a2a2 solid 1px;
 }
 
 .news-cards-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     padding: 0px 0px 0px 10px;
 }
 
@@ -68,14 +81,36 @@ main {
     flex-direction: column;
     justify-content: center;
     background-color: white;
-    border: #a3a2a2 solid 1px;
-    padding: 0 0 0 10px;
-    margin: 10px;
-    height: 30%;
+    padding: 25px 0px 0px 10px;
+    margin: 1px;
+    height: 50%;
 }
 
 .news-card h2 {
     font-size: 2.5em;
     font-weight: bold;
     margin: 0;
+}
+
+.feature {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding: 0px 0px 0px 10px;
+width: 33%;
+text-align: center;
+}
+
+.news-cards-container2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 0px 0px 10px;
+    border: #a3a2a2 solid 1px;
+}
+
+.feature p{
+    margin-top: 0;
 }
