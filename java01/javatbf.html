@@ -3,35 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Previsão Meteorológica - IPMA</title>
+    <title>Previsão do Tempo - IPMA</title>
     <link rel="stylesheet" href="javatbf.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <div class="container">
-        <h1>Previsão Meteorológica</h1>
-        
-        <div class="selecao">
-            <label for="distritos">Selecione uma localidade:</label>
-            <select id="distritos">
-                <option value="">Carregando localidades...</option>
-            </select>
-        </div>
-        
-        <div id="previsao-container" class="hidden">
-            <h2 id="local-nome"></h2>
-            <div id="previsao-dias" class="previsao-grid"></div>
-        </div>
-        
-        <div id="loading" class="hidden">
-            <div class="loader"></div>
-            <p>A carregar previsão...</p>
-        </div>
-        
-        <div id="erro" class="hidden">
-            <p>Ocorreu um erro ao carregar os dados. Por favor, tente novamente.</p>
-        </div>
+        <header class="app-header">
+            <h1>Previsão Meteorológica</h1>
+            <p>Consulte a previsão do tempo para localidades em Portugal</p>
+        </header>
+
+        <main class="app-content">
+            <div class="selecao-localidade">
+                <label for="distritos">Selecione uma localidade:</label>
+                <select id="distritos">
+                    <option value="">Carregando localidades...</option>
+                </select>
+            </div>
+
+            <div id="loading" class="loading-container hidden">
+                <div class="loading-spinner"></div>
+                <p>Carregando dados...</p>
+            </div>
+
+            <div id="erro" class="error-container hidden">
+                <p>⚠️ Ocorreu um erro ao carregar os dados. Por favor, tente novamente.</p>
+            </div>
+
+            <div id="previsao-container" class="hidden">
+                <h2 id="local-nome"></h2>
+                <div id="previsao-dias" class="previsao-grid"></div>
+            </div>
+        </main>
+
+        <footer class="app-footer">
+            <p>Dados fornecidos por <a href="https://api.ipma.pt" target="_blank">IPMA - Instituto Português do Mar e da Atmosfera</a></p>
+        </footer>
     </div>
-    
+
     <script src="javatbf.js"></script>
 </body>
 </html>
