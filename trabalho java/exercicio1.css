@@ -1,0 +1,81 @@
+body {
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 30px;
+    padding: 0px;
+}
+
+.header, .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d9d9d966;
+    color: rgb(0, 0, 0);
+    height: 100px;
+}
+
+header h1, footer h1 {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    height: 50px;
+} 
+
+.nav div{
+    width: 25%;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.5em  ;
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    height: 400px;
+    padding: 10px;
+}
+
+.foto-space {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9ad3e866;
+    width: 70%; 
+    height: 100%;
+    font-size: 1.5em;
+}
+
+.news-cards-container{
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px 0px 10px;
+}
+
+.news-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ffffff;
+    border: #a3a2a2 solid 1px;
+    padding: 0 0 0 10px;
+    margin: 10px;
+
+}
+
+.news-card h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 0;
+}

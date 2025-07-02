@@ -116,16 +116,16 @@ const headerheight = document.getElementById('header').style.height= '100px';
 const headerfontSize= document.getElementById('header').style.fontSize= '3em';
 const headerFontWeight = document.getElementById('header').style.fontWeight= 'bold';
 
-const h1eaderbackground = document.getElementById('header').style.display= 'flex';
-const h1eaderjustifycontent = document.getElementById('header').style.justifyContent= 'center';
-const h1eaderalignitems = document.getElementById('header').style.alignItems= 'center';
-const h1eaderbackgroundColor01 = document.getElementById('header').style.backgroundColor= ' #d9d9d966';
-const h1eadercolor = document.getElementById('header').style.color= 'color: rgb(0, 0, 0)';
-const h1eaderheight = document.getElementById('header').style.height= '100px';
+/*const h1eaderbackground = document.getElementById('h1header').style.display= 'flex';
+const h1eaderjustifycontent = document.getElementById('h1eader').style.justifyContent= 'center';
+const h1eaderalignitems = document.getElementById('h1eader').style.alignItems= 'center';
+const h1eaderbackgroundColor01 = document.getElementById('h1eader').style.backgroundColor= ' #d9d9d966';
+const h1eadercolor = document.getElementById('h1eader').style.color= 'color: rgb(0, 0, 0)';
+const h1eaderheight = document.getElementById('h1eader').style.height= '100px';
 
 const h1eaderfontSize= document.getElementById('h1eader').style.fontSize= '3em';
 const h1eaderFontWeight = document.getElementById('h1eader').style.fontWeight= 'bold';
-
+*/
 
 // CSS Nav
 
@@ -161,7 +161,6 @@ const Mainbackground02 = document.getElementById('main').style.backgroundColor= 
 const MainWidth02 = document.getElementById('main').style.width= '70%';
 const Mainheigth02 = document.getElementById('main').style.height= '100%';
 const MainFontSize02 = document.getElementById('main').style.width= '1.5em';
-
 
 // CSS News Cards Container
 

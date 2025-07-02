@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão Meteorológica - IPMA</title>
+    <link rel="stylesheet" href="javatbf.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Previsão Meteorológica</h1>
+        
+        <div class="selecao">
+            <label for="distritos">Selecione uma localidade:</label>
+            <select id="distritos">
+                <option value="">Carregando localidades...</option>
+            </select>
+        </div>
+        
+        <div id="previsao-container" class="hidden">
+            <h2 id="local-nome"></h2>
+            <div id="previsao-dias" class="previsao-grid"></div>
+        </div>
+        
+        <div id="loading" class="hidden">
+            <div class="loader"></div>
+            <p>A carregar previsão...</p>
+        </div>
+        
+        <div id="erro" class="hidden">
+            <p>Ocorreu um erro ao carregar os dados. Por favor, tente novamente.</p>
+        </div>
+    </div>
+    
+    <script src="javatbf.js"></script>
+</body>
+</html>
